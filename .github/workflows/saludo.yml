@@ -1,0 +1,12 @@
+name: Saludo Automatico
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar mensaje
+        run: echo "Repositorio actualizado correctamente!"
